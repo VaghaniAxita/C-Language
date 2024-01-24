@@ -1,0 +1,18 @@
+#includ<stdio.h>
+#include<conio.h>
+
+main()
+
+{	clrscr();
+	printf("-----------");
+	printf("|\t\t\t\t|");
+	printf("R\t\t\t\t|");
+	printf("N\t\t\t\t|");
+	printf("W\t\t\t\t|");
+	printf("|\t\t\t\t|");
+	printf("-----------")
+
+	getch();
+
+
+}

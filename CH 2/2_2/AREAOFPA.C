@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+
+{
+	const float pi=3.14;
+	float area;
+	int r;
+	clrscr();
+	printf("Enter R : ");
+	scanf("%d",&r);
+	area=2*pi*r;
+	printf("area of parameter : %.2f",area);
+	getch();
+
+}

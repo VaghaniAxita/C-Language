@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+
+{
+   float length,width;
+   clrscr();
+
+   printf("Enter Length of rectangle : ",length);
+   scanf("%f", &length);
+   printf("Enter Width of rectangle : ",width);
+   scanf("%f", &width);
+
+   printf("A : %f\n",length);
+   printf("B : %f\n",width);
+
+   printf("%.2f * %.2f = %.2f",length,width,length*width);
+
+
+
+   getch();
+
+
+}
+
