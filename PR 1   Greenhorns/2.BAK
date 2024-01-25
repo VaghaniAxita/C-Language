@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+	int BS,HRA,DA,TA,GS;
+	clrscr();
+
+	printf("----------------------------\n");
+
+	printf("Enter the Basic Salary :");
+	scanf("%d",&bs)
+
+
+
+}
