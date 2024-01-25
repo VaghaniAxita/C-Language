@@ -2,19 +2,19 @@
 #include<conio.h>
 
 main()
-
 {
-	int p,r,n;
-	float s,area;
+	float p,r,n,simpleinterest;
 	clrscr();
-	printf("Enter P : ");
-	scanf("%d",&p);
-	printf("Enter R : ");
-	scanf("%d",&r);
-	printf("Enter N : ");
-	scanf("%d",&n);
-	area=p*r*n/100;
-	printf("Simple Interest : %.2f",s);
-	getch();
+	printf("Enter the value of P :");
+	scanf("%f",&p);
+	printf("Enter the value of R :");
+	scanf("%f",&r);
+	printf("Enter the value of N :");
+	scanf("%f",&n);
 
+	simpleinterest=p*r*n/100;
+
+	printf("Simple Interest :%f",simpleinterest);
+
+	getch();
 }
