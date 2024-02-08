@@ -5,28 +5,30 @@ main()
 {
 	/* check number is magic or not ex:- 123 is magic number. */
 
-	int n,sum=0,mul=1,rem;
+	int n,a=1,b=0,rem,i;
 	clrscr();
 
 	printf("Enter any Number :");
 	scanf("%d",&n);
 
+	i=n;
 	while(n!=0)
 	{
 		rem=n%10;
-		sum+=rem;
-		mul*=rem;
+		a*=rem;
+		b+=rem;
 		n/=10;
 	}
 
-	if(sum==mul)
+	if(a==b)
 	{
-		printf("This is a Magic Number\n",n);
+		printf("%d is a Magic Number\n",i);
 	}
 	else
 	{
-		printf("This is not a Magic Number\n",n);
+		printf("%d is not a Magic Number\n",i);
 	}
 	getch();
 
 }
+
