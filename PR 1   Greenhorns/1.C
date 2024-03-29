@@ -3,17 +3,14 @@
 
 main()
 {
-	int c,f;
-	clrscr();
-
-	printf("Enter Celsius :");
-	scanf("%d",&c);
-
-	f=c*9/5+32;
-
-	printf("The Temprature in Celsius : %d");
+	float F,C;
+	clrscr():
+	printf("Enter temperature in celsius : ");
+	scanf("%f",&C);
+	
+	F = (C*1.8)+32;
+	
+	printf("Temperature in Fahrenheit : %.2f",F);
 
 	getch();
-
-
 }

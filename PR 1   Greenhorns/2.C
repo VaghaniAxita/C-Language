@@ -3,33 +3,18 @@
 
 main()
 {
-	int BS,HRA,DA,TA,GS;
+	float B_S,HRA,DA,TA,T_S=0;
 	clrscr();
-
-	printf("----------------------------\n");
-
-	printf("Enter the Basic Salary :");
-	scanf("%d",&BS);
-	printf("Enter the House Rent Allowance :");
-	scanf("%d",&HRA);
-	printf("Enter the Dearness Allowance :");
-	scanf("%d",&DA);
-	printf("Enter the Traveling Allowance :");
-	scanf("%d",&TA);
-
-	printf("------------------------------\n");
-
-	HRA = BS*10/100;
-	DA = BS*5/100;
-	TA = BS*8/100;
-
-	GS = BS+HRA+DA+TA;
-
-	printf("Gross Salary : %d",GS);
-
-	printf("\n-----------------------------\n");
-
+	
+	printf("Enter your Base salary : ");
+	scanf("%f",&B_S);
+	
+	HRA = B_S*10/100;
+	DA = B_S*5/100;
+	TA = B_S*8/100;
+	T_S = B_S + HRA + DA + TA;
+	
+	printf("Total Salary : %.2f",T_S);
+	
 	getch();
-
-
 }

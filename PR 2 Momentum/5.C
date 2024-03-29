@@ -3,40 +3,36 @@
 
 main()
 {
-	float u,bill,total;
+	float U,B,T;
 	clrscr();
 
-	printf("Enter Used Unit:");
-	scanf("%f",&u);
+	printf("Enter your electricity Unit : ");
+	scanf("%f",&U);
 
-	if(u > 0 && u <= 50)
+	if(U <= 50)
 	{
-		bill = u * 0.50;
-		printf("The bill is :%.2f\n",bill);
+		B = U*0.50 ;
 	}
-	else if(u >= 51 && u <= 150)
+	else if(U>=51 && U<=150)
 	{
-		bill = u * 0.75;
-		printf("The bill is :%.2f\n",bill);
+		B = ((U-50)*0.75) +25 +((U-50)*0.75*0.2) ;
 	}
-	else if(u >= 151 && u <= 250)
+	else if(U>=151 && U<=250)
 	{
-		bill = u * 1.20;
-		printf("The bill is :%.2f\n",bill);
+		B = ((U-150)*1.20) +(75+25)+((U-150)*1.20*0.2);
 	}
-	else if(u >= 250)
+	else if(U>=251)
 	{
-		bill = u * 1.50;
-		printf("The bill is :%.2f\n",bill);
+		B = ((U-250)*1.50) +(120+75+25)+((U-150)*1.50*0.2);
 	}
 	else
 	{
-		printf("Invalid Choice.....");
+		printf("Invalid input !!");
 	}
 
-	total = bill + (bill * 0.20);
+	T = B;
 
-	printf("Total Bill is :%.2f\n",total);
+	printf("Your Total bill : %.2f Rupees",T);
 
 	getch();
 }
