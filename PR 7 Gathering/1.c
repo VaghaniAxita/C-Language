@@ -35,6 +35,12 @@ int div(int a, int b)
 	printf("enter b :");
 	scanf("%d", &b);
 
+	if (b == 0)
+	{
+		printf("\nCan Not Divided by 0.....\n");
+		return 0;
+	}
+
 	return a / b;
 }
 int mod(int a, int b)
@@ -46,14 +52,11 @@ int mod(int a, int b)
 
 	if (b == 0)
 	{
-		printf("\nCan Not Divided by 0.....");
-	}
-	else
-	{
-		return a % b;
+		printf("\nCan Not Modulo by 0.....\n");
+		return 0;
 	}
 
-	// return a%b;
+	return a % b;
 }
 void calc()
 {
