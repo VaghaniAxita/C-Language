@@ -2,39 +2,26 @@
 
 #include <stdio.h>
 
-#define MAX_SIZE 100
+int main()
+{
+    int N;
 
-
-void squareArray(int *arr, int size) {
-    
-    for (int i = 0; i < size; ++i) {
-        
-        *(arr + i) *= *(arr + i);
-    }
-}
-
-int main() {
-    int arr[MAX_SIZE];
-    int size;
-
-    
     printf("Enter the size of the array: ");
-    scanf("%d", &size);
+    scanf("%d", &N);
 
-    
-    printf("Enter elements of the array: \n", size);
-    for (int i = 0; i < size; ++i) {
-        printf("Enter element %d: ", i + 1);
+    int arr[N];
+
+    printf("Enter %d elements of the array:\n", N);
+    for (int i = 0; i < N; ++i)
+    {
+        printf("Element %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
 
-    
-    squareArray(arr, size);
-
-    
-    printf("Square of each element of the array: ");
-    for (int i = 0; i < size; ++i) {
-        printf("%d ", arr[i]);
+    printf("Square of each element of the array:\n");
+    for (int i = 0; i < N; ++i)
+    {
+        printf("%d ", *(arr + i) * *(arr + i));
     }
     printf("\n");
 

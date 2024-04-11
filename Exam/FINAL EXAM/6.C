@@ -20,10 +20,9 @@ int main()
     {
         printf("File OPEN SUCCESSFULLY !!!!!.\n");
     }
-    
-    
+
     fprintf(file, "Student   Name     Course   \n");
-    fprintf(file,"--------------------------\n\n");
+    fprintf(file, "--------------------------\n\n");
     for (int i = 0; i < 3; ++i)
     {
         printf("\n=============================\n");
@@ -34,12 +33,11 @@ int main()
         scanf("%s", course);
 
         fprintf(file, " %d        %s        %s\n", i + 1, name, course);
-       
     }
 
     printf("\n\n");
 
-        printf("-----Student details written to file successfully.-------\n");
+    printf("-----Student details written to file successfully.-------\n");
 
     return 0;
 }
